@@ -148,6 +148,14 @@ h1 {
     margin: 26px 0;
     /* flex-direction: column; */
 }
+.grab-now
+{
+    text-decoration: none;
+    color: green;
+    /* font-family:'Lato', sans-serif; */
+    font-weight: bolder;
+
+}
 
 
 
@@ -167,4 +175,9 @@ h1 {
     filter: opacity(0.4);
     /*by using filter drop shadow and opacity we have changed the color of
     show more image from black to grey*/
+}
+.show-more:hover
+{
+    
+    filter: opacity(1);
 }
