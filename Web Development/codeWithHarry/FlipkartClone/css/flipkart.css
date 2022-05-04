@@ -42,6 +42,10 @@ nav {
     /* position: static;
     top: 0px; */
 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*position,top and width for making nav bar sticky*/
 
     /* padding: 20px auto 20px 10px; invalid property here*/
 }
@@ -97,13 +101,17 @@ nav {
 
 .main-img {
 
-    margin: 20px 0px 100px 135px;
+    margin: 100px 0px 100px 135px;
     display: flex;
     align-items: center;
 }
 
+.main-img:hover {
+    cursor: pointer;
+}
+
 h1 {
-    padding: 26px 26px;
+    padding: 26px 14px;
     font-family: 'Proza Libre', sans-serif;
     font-weight: lighter;
 }
@@ -113,30 +121,35 @@ h1 {
     max-width: 171vw;
     display: inline-flex;
     margin-top: 29px;
-    margin-left: 26px;
+    margin-left: 14px;
     margin-right: 69px;
     margin-bottom: 21px;
     /* margin: 37px auto auto 40px; */
-    /* display:flex;
-    align-items: center;
-    justify-content: center; */
+
 
 }
 
-.card-item {
-    display: inline-flex;
-    justify-content: center;
+.card-item:hover {
+    /* display: inline-flex; */
+    /*if display is inline flex,then p will be
+    displayed alongside */
+    /* justify-content: center; since display flex is not applied these 3 
+    properties will have no effect
     align-items: center;
-    flex-direction: row;
+    flex-direction: row; */
     /* margin: 0 15px; */
+    cursor: pointer;
 }
 
 .item-desc {
-    /* display: flex; */
+    /* display: flex; if item-desc display is flex,then all lines of 3 para's
+    will be displayed in a single line*/
     text-align: center;
     margin: 26px 0;
     /* flex-direction: column; */
 }
+
+
 
 .copyright {
     height: 7vh;
@@ -144,4 +157,14 @@ h1 {
     color: white;
     text-align: center;
     padding-top: 42px;
+}
+
+.show-more {
+    width: 59px;
+    height: 55px;
+    padding-bottom: 58px;
+    filter: drop-shadow(0 0 0 grey);
+    filter: opacity(0.4);
+    /*by using filter drop shadow and opacity we have changed the color of
+    show more image from black to grey*/
 }
