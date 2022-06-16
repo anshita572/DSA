@@ -2,6 +2,10 @@
 
 //Method-2 : Optimised
 //Time Complexity : O(n+m)
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
 vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
 {
 	int i=0;
@@ -18,7 +22,7 @@ vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, i
     }
      else if(arr1[i]<arr2[j])
     {i++;}
-    else //if(arr[i]>arr[j])
+    else //if(arr1[i]>arr2[j])
     {j++;}
  }
  return ans;

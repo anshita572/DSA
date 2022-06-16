@@ -1,4 +1,7 @@
 //https://bit.ly/3DXfsDZ 
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
 vector<int>reverse(vector<int>arr)
 {  int i=0;
  int j=arr.size()-1;

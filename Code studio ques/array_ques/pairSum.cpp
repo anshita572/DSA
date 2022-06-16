@@ -1,4 +1,8 @@
 //Pair Sum [https://bit.ly/3EwlU6e ]
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
 vector<vector<int>> pairSum(vector<int> &arr, int s){
     int n=arr.size();
     vector<vector<int>>ans;

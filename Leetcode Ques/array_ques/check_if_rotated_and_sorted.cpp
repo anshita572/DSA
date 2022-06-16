@@ -1,4 +1,13 @@
 //https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+
+//TC for both approaches : O(N)
+//SC for both approaches : O(1)
+
+//APPROACH :1 
+#include<iostream>
+#include<vector>
+using namespace std;
+
 class Solution {
 public:
     bool check(vector<int>& nums) {
@@ -19,5 +28,24 @@ public:
     {return true;}
         else
         {return false;}
+    }
+};
+
+//APPROACH :2
+class Solution {
+public:
+    bool check(vector<int>& nums) {
+        int n=nums.size();
+        int count=0;
+    for(int i=0;i<n;i++)
+    {
+       if(nums[i]>(nums[(i+1) % n])) //mod n to check for last and first element,dry run and you will understand!
+       {count++;}
+    }
+            
+        if(count>1)
+        {return false;}
+        else
+        {return true;}
     }
 };
