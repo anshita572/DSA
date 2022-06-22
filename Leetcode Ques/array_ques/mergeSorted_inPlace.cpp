@@ -1,4 +1,10 @@
 // https://leetcode.com/problems/merge-sorted-array/
+
+//TC : O(N)
+//SC : O(1)
+#include<iostream>
+#include<vector>
+using namespace std;
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {

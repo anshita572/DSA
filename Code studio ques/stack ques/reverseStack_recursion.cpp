@@ -1,4 +1,7 @@
 //:https://bit.ly/3HCBnD4
+#include <iostream>
+#include<stack>
+using namespace std;
 void insertAtBottom(stack<int> &stack,int x)
 {
 	//base case
